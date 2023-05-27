@@ -12,18 +12,31 @@
             // Exercise 1
             Console.WriteLine("\nZadanie 1: Czy liczby 'a' i 'b' są równe?");
             if (a == b)
-                Console.WriteLine(a + "i" + b + " są równe");
+            {
+                Console.WriteLine($"{a} i {b} są równe");
+            }
             else
-                Console.WriteLine(a + "i" + b + " NIE są równe");
+            {
+                Console.WriteLine($"{a} i {b} są równe");
+            }
 
             // Exercise 2
             Console.WriteLine($"\nZadanie 2: Czy liczba 'a' jest parzysta?");
-            if (a % 2 == 0) Console.WriteLine($"Liczba: {a} jest parzysta");
-            else Console.WriteLine($"Liczba: {a} jest NIEparzysta");
+            if (a % 2 == 0)
+            {
+                Console.WriteLine($"Liczba: {a} jest parzysta");
+            }
+            else
+            {
+                Console.WriteLine($"Liczba: {a} jest NIEparzysta");
+            }
 
             // Exercise 3
             Console.WriteLine($"\nZadanie 3: Czy liczba 'a' jest dodatnia?");
-            if (a >= 0) Console.WriteLine($"Liczba: {a} jest liczbą parzystą");
+            if (a >= 0)
+            {
+                Console.WriteLine($"Liczba: {a} jest liczbą parzystą");
+            }
 
             // Exercise 4
             Console.WriteLine("\nZadanie 4: Czy dany rok jest przestępny");
@@ -31,8 +44,13 @@
             Int32.TryParse(Console.ReadLine(), out int year);
 
             if ((year % 4 == 0 && year % 100 != 0) || year % 400 == 0)
+            {
                 Console.WriteLine($"Rok {year} jest rokiem przestępnym");
-            else Console.WriteLine($"Rok {year} nie jest rokiem przestępnym");
+            }
+            else
+            {
+                Console.WriteLine($"Rok {year} nie jest rokiem przestępnym");
+            }
 
             // Exercise 5
             Console.WriteLine("\nZadanie 5: Do czego uprawnia wiek?");
@@ -45,13 +63,21 @@
             int presidentAge = 35;
 
             if (yourAge >= presidentAge)
+            {
                 Console.WriteLine("W Polsce możesz starać się o 'fotel': premiera, posła, senatora oraz Prezydenta RP");
+            }
             else if (yourAge >= senatorAge)
+            {
                 Console.WriteLine("W Polsce możesz starać się o 'fotel': premiera, posła oraz Senatora");
+            }
             else if (yourAge >= envoyAge)
+            {
                 Console.WriteLine("W Polsce możesz starać się o 'fotel': premiera, posła oraz Posła");
+            }
             else
+            {
                 Console.WriteLine("W Polsce możesz starać się o 'fotel': Premiera");
+            }
 
             // Exercise 6
             Console.WriteLine("\nZadanie 6: Co to za wzrost?");
@@ -64,15 +90,25 @@
             int humanoidiumHeight = 140;
 
             if (yourHeight >= ogreHeight)
+            {
                 Console.WriteLine("Jesteś Ogrem");
+            }
             else if (yourHeight >= elvesHeight)
+            {
                 Console.WriteLine("Jesteś Elfem");
+            }
             else if (yourHeight >= humanoidiumHeight)
+            {
                 Console.WriteLine("Jesteś jakimś Humanoidem");
+            }
             else if (yourHeight >= dwarfHeight)
+            {
                 Console.WriteLine("Jesteś Krasnoludem");
+            }
             else
+            {
                 Console.WriteLine("Jesteś Niziołkiem");
+            }
 
             // Exercise 7
             Console.WriteLine("\nZadanie 7: Która liczba jest największa?");
@@ -119,7 +155,9 @@
                 }
             }
             else
+            {
                 Console.WriteLine("Nie dopuszczono do rekrutacji");
+            }
 
             // Exercise 9
             Console.WriteLine("Zadanie 9: Jaka jest temperatura?");
@@ -128,17 +166,29 @@
             Console.WriteLine($"Dane testowe: {temp}");
 
             if (temp < 0)
+            {
                 Console.WriteLine("Cholernie piździ");
+            }
             else if (temp >= 0 && temp <= 10)
+            {
                 Console.WriteLine("Zimno");
+            }
             else if (temp > 0 && temp <= 20)
+            {
                 Console.WriteLine("Chłodno");
+            }
             else if (temp > 20 && temp <= 30)
+            {
                 Console.WriteLine("W sam raz");
+            }
             else if (temp > 30 && temp <= 40)
+            {
                 Console.WriteLine("Zaczyna być słabo, bo gorąco");
+            }
             else
+            {
                 Console.WriteLine("A weź wyprowadzam się na Alaskę");
+            }
 
 
             // Exercise 10
@@ -199,7 +249,9 @@
                 Console.WriteLine("Celujący");
             }
             else
+            {
                 Console.WriteLine("Niepoprawna wartość !");
+            }
 
             // Exercise 12
             Console.WriteLine("\nZadanie 12: Jaką dzień tygodnia?");
@@ -236,7 +288,9 @@
                 Console.WriteLine("Niedziela");
             }
             else
+            {
                 Console.WriteLine("Niepoprawna wartość !");
+            }
 
             //Exercise 13
             Console.WriteLine("Zadanie 13: Kalkulator");
