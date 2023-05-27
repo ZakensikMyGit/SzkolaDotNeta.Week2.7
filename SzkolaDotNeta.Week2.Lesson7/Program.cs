@@ -118,9 +118,8 @@
             Int32.TryParse(Console.ReadLine(), out int numberThree);
             Console.WriteLine($"Podano następujące liczby: {numberOne}, {numberTwo}, {numberThree}");
 
-            if (numberOne > numberTwo)
+            if (numberOne > numberTwo && numberOne > numberThree)
             {
-                if (numberOne > numberTwo)
                     Console.WriteLine($"Liczba {numberOne} jest najwieksza z podanych");
             }
             else if (numberTwo > numberThree)
