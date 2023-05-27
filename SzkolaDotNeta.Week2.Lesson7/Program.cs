@@ -307,23 +307,30 @@
 
             if (action == 1)
             {
-                result = numberOne + numberTwo;
-                Console.WriteLine($"Twój wynik to: {result}");
+                sum = firtstNumber + secondNumber;
+                Console.WriteLine($"Twój wynik to: {sum}");
             }
             if (action == 2)
             {
-                result = numberOne - numberTwo;
-                Console.WriteLine($"Twój wynik to: {result}");
+                sum = firtstNumber - secondNumber;
+                Console.WriteLine($"Twój wynik to: {sum}");
             }
             if (action == 3)
             {
-                result = numberOne * numberTwo;
-                Console.WriteLine($"Twój wynik to: {result}");
+                sum = firtstNumber * secondNumber;
+                Console.WriteLine($"Twój wynik to: {sum}");
             }
             if (action == 4)
             {
-                result = numberOne / numberTwo;
-                Console.WriteLine($"Twój wynik to: {result}");
+                sum = firtstNumber / secondNumber;
+                if(secondNumber != 0)
+                {
+                Console.WriteLine($"Twój wynik to: {sum}");
+                }
+                else
+                {
+                    Console.WriteLine("Pamiętaj 'Cholero' nigdy nie dziel przez zero :)");
+                }
             }
 
             Console.ReadLine();
