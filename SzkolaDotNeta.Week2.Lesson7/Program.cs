@@ -120,7 +120,7 @@
 
             if (numberOne > numberTwo && numberOne > numberThree)
             {
-                    Console.WriteLine($"Liczba {numberOne} jest najwieksza z podanych");
+                Console.WriteLine($"Liczba {numberOne} jest najwieksza z podanych");
             }
             else if (numberTwo > numberThree)
             {
@@ -164,25 +164,28 @@
             Int32.TryParse(Console.ReadLine(), out int temp);
             Console.WriteLine($"Dane testowe: {temp}");
 
-            if (temp < 0)
+            if (temp < 41)
             {
-                Console.WriteLine("Cholernie piździ");
-            }
-            else if (temp >= 0 && temp <= 10)
-            {
-                Console.WriteLine("Zimno");
-            }
-            else if (temp > 0 && temp <= 20)
-            {
-                Console.WriteLine("Chłodno");
-            }
-            else if (temp > 20 && temp <= 30)
-            {
-                Console.WriteLine("W sam raz");
-            }
-            else if (temp > 30 && temp <= 40)
-            {
-                Console.WriteLine("Zaczyna być słabo, bo gorąco");
+                if (temp > 30)
+                {
+                    Console.WriteLine("Zaczyna być słabo, bo gorąco");
+                }
+                else if (temp > 20)
+                {
+                    Console.WriteLine("W sam raz");
+                }
+                else if (temp > 10)
+                {
+                    Console.WriteLine("Chłodno");
+                }
+                else if (temp >= 0)
+                {
+                    Console.WriteLine("Zimno");
+                }
+                else
+                {
+                    Console.WriteLine("Cholernie piździ");
+                }
             }
             else
             {
@@ -302,7 +305,7 @@
             Int32.TryParse(Console.ReadLine(), out int action);
             decimal sum = 0;
 
-            if(action == 1)
+            if (action == 1)
             {
                 result = numberOne + numberTwo;
                 Console.WriteLine($"Twój wynik to: {result}");
@@ -323,6 +326,7 @@
                 Console.WriteLine($"Twój wynik to: {result}");
             }
 
+            Console.ReadLine();
         }
     }
 }
